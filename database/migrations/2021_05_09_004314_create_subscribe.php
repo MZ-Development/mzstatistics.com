@@ -13,7 +13,7 @@ class CreateSubscribe extends Migration
      */
     public function up()
     {
-        Schema::create('subscribe', function (Blueprint $table) {
+        Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
             $table->dateTime('created_at');
