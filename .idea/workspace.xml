@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f0212a2-fbd1-46ad-be4e-0d1c7080c31d" name="Default Changelist" comment="Изменены миграции.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +18,11 @@
       <list>
         <option value="ZaurbekMakhmudov &lt;65700775+zaurbekmakhmudov@users.noreply.github.com&gt;" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -190,7 +193,7 @@
       <workItem from="1620520420965" duration="1418000" />
       <workItem from="1620583682441" duration="4185000" />
       <workItem from="1620675229143" duration="74000" />
-      <workItem from="1620675310303" duration="868000" />
+      <workItem from="1620675310303" duration="1008000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлены миграции. Убраны лишние файлы.">
       <created>1620521273119</created>
