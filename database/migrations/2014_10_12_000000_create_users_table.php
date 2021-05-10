@@ -19,9 +19,12 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('phone')->unique();
             $table->string('token')->default('null');
-            $table->string('site')->unique();
+            $table->string('site')->default('null');
             $table->boolean('is_subscribed')->default(false);
+            $table->string('login')->unique();
             $table->string('password');
+            $table->dateTime('updated_at');
+            $table->dateTime('created_at');
         });
     }
 

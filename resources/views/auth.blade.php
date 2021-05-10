@@ -9,8 +9,11 @@
 </head>
 <body>
 <h1>Авторизация</h1>
-<form action="/auth">
+<form method="POST" action="/authUser">
+    @csrf
+    <h4>логин</h4>
     <input type="text" name="login" id="">
+    <h4>пароль</h4>
     <input type="password" name="password" id="">
     <input type="submit" value="Войти">
 </form>
