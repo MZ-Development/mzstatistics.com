@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +14,11 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () { return view('welcome'); })->name('/');
 
+Route::get('/auth', [PageController::class, 'getAuth'])->name('auth');
+Route::get('/sign', [PageController::class, 'getSign']);
 
-Route::post('/auth', [UserController::class, '']);
-Route::post('/sign', [UserController::class, '']);
+Route::post('/authUser', [UserController::class, 'Auth']);
+Route::post('/signUser', [UserController::class, 'Sign']);
+Route::post('/logout', [UserController::class, 'logout']);
