@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('token')->default('null');
             $table->string('site')->unique();
             $table->boolean('is_subscribed')->default(false);
+            $table->string('login')->unique();
             $table->string('password');
         });
     }

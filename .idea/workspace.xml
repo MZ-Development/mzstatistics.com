@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f0212a2-fbd1-46ad-be4e-0d1c7080c31d" name="Default Changelist" comment="Изменены миграции." />
+    <list default="true" id="3f0212a2-fbd1-46ad-be4e-0d1c7080c31d" name="Default Changelist" comment="Изменены миграции.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,6 +141,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1sGmrcY2NcMZuQ2v8MGy0dNZMYh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -183,7 +188,9 @@
       <updated>1620507499816</updated>
       <workItem from="1620507500977" duration="4477000" />
       <workItem from="1620520420965" duration="1418000" />
-      <workItem from="1620583682441" duration="2739000" />
+      <workItem from="1620583682441" duration="4185000" />
+      <workItem from="1620675229143" duration="74000" />
+      <workItem from="1620675310303" duration="868000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлены миграции. Убраны лишние файлы.">
       <created>1620521273119</created>
@@ -215,6 +222,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлены миграции. Убраны лишние файлы." />
