@@ -1,6 +1,7 @@
 @extends('templates.auth_template')
 @section('content')
 <body>
+{{--<img class="body_image" src="{{URL::asset("assets/img/1122.jpg")}}">--}}
 <div class="container right-panel-active">
     <div class="container__form container__signup">
         <form action="#" class="form" id="form1">
