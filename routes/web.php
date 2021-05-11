@@ -15,7 +15,6 @@ use App\Http\Controllers\PageController;
 */
 
 Route::get('/', function () { return view('welcome'); })->name('/');
-
 Route::get('/auth', [PageController::class, 'getAuth'])->name('auth');
 Route::get('/sign', [PageController::class, 'getSign']);
 

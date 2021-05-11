@@ -17,11 +17,11 @@
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body {
+body{
 	align-items: center;
 	background-color: var(--white);
-	background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
-	background-attachment: fixed;
+    background-image: url("/assets/img/1122.jpg");
+    background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -103,7 +103,7 @@ body {
 
 .overlay {
 	background-color: var(--lightblue);
-	background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
+    background-image: url("/assets/img/1122.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
