@@ -25,6 +25,12 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->dateTime('updated_at');
             $table->dateTime('created_at');
+            $table->string('db_host')->default('null');
+            $table->string('db_port')->default('null');
+            $table->string('db_name')->default('null');
+            $table->string('db_username')->default('null');
+            $table->string('db_password')->default('null');
+
         });
     }
 

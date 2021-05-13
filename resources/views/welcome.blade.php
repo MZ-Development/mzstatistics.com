@@ -28,10 +28,7 @@ use Illuminate\Support\Facades\Auth;
         if (Auth::check()){
             echo 'Вы авторизированы';
     ?>
-    <form method="POST" action="/logout">
-        @csrf
-        <input type="submit" value="Выйти">
-    </form>
+    <a href="/token">Получить токен</a>
     <?php
         }
         else{
