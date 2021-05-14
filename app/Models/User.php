@@ -47,13 +47,10 @@ class User extends Authenticatable
         ]);
     }
 
-    public function saveUser($name, $email, $phone, $login, $password)
+    public function saveUser($email, $password)
     {
         $user = User::create([
-            'name' => $name,
             'email' => $email,
-            'phone' => $phone,
-            'login' => $login,
             'password' => Hash::make($password)
         ]);
     }
