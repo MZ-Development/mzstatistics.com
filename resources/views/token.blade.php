@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Получить токен</title>
 </head>
@@ -15,8 +16,7 @@
     <input type="submit" value="Выйти">
 </form>
 <div id="tokenResponse"></div>
-<form method="POST" name="tokenForm">
-    @csrf
+<div>
     <p>Введите URL сайта</p>
     <input type="text" name="url" id="tokenForm__inp_url">
     <p>Введите db_host</p>
@@ -30,7 +30,7 @@
     <p>Введите db_password</p>
     <input type="password" name="db_password" id="tokenForm__inp__db_password">
     <button name="tokenForm__btn" id="tokenForm__btn" >Получить токен</button>
-</form>
+</div>
 <script src="{{URL::asset('assets/js/ajax.js')}}"></script>
 </body>
 </html>

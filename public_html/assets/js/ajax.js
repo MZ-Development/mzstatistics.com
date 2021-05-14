@@ -1,13 +1,14 @@
 /* ****************************
 * AJAX запрос на аутентификацию
 *******************************/
-$('#tokenForm__btn.btn').on('click', function (){
-   url = $('#tokenForm.tokenForm__inp_url').val();
-   db_host = $('tokenForm.tokenForm__inp__db_host').val();
-   db_port = $('tokenForm.tokenForm__inp__db_port').val();
-   db_name = $('tokenForm.tokenForm__inp__db_name').val();
-   db_username = $('tokenForm.tokenForm__inp__db_username').val();
-   db_password = $('tokenForm.tokenForm__inp__db_password').val();
+$('#tokenForm__btn').on('click', function (){
+   site = $('#tokenForm__inp_url').val();
+   db_host = $('#tokenForm__inp__db_host').val();
+   db_port = $('#tokenForm__inp__db_port').val();
+   db_name = $('#tokenForm__inp__db_name').val();
+   db_username = $('#tokenForm__inp__db_username').val();
+   db_password = $('#tokenForm__inp__db_password').val();
+   console.log(site);
     $.ajax({
         headers: {
             'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
@@ -15,7 +16,7 @@ $('#tokenForm__btn.btn').on('click', function (){
         type: "POST",
         url: "/setToken",
         data: {
-            url:url,
+            site:site,
             db_host:db_host,
             db_port:db_port,
             db_name:db_name,
@@ -23,6 +24,7 @@ $('#tokenForm__btn.btn').on('click', function (){
             db_password:db_password
         },
         success: function (data) {
+            alert(data['message'])
             console.log(data);
         }
     });

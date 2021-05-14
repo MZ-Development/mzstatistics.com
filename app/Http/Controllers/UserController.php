@@ -66,13 +66,13 @@ class UserController extends Controller
 
     public function setToken(Request $request)
     {
-        $validate = $request->validate([
-            'db_host' => 'required|min:6',
-            'db_port' => 'required|min:4|max:4',
-            'db_name' => 'required|min:4',
-            'db_username' => 'required|min:4',
-            'db_password' => 'required|min:4'
-        ]);
+//        $validate = $request->validate([
+//            'db_host' => 'required|min:6',
+//            'db_port' => 'required|min:4|max:4',
+//            'db_name' => 'required|min:4',
+//            'db_username' => 'required|min:4',
+//            'db_password' => 'required|min:4'
+//        ]);
         $db = new ClientDatabase(
             $request->input('db_host'),
             $request->input('db_port'),
@@ -83,12 +83,11 @@ class UserController extends Controller
         try {
             $db->getConnection();
         } catch (Exception $e){
-            echo '<script>alert("Ошибка подключения.")</script>';
-            return redirect('/token');
+            return ['success' => 0,'message' => 'Ошибка подключения к БД'];
         }
         $user = new User();
         $user->saveClientDatabase(
-            $request->input('url'),
+            $request->input('site'),
             $request->input('db_host'),
             $request->input('db_port'),
             $request->input('db_name'),
@@ -96,5 +95,6 @@ class UserController extends Controller
             $request->input('db_password')
         );
         $user->setToken();
+        return ['success' => 1, 'message' => 'Успешно подключено'];
     }
 }
