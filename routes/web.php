@@ -17,7 +17,9 @@ use App\Http\Controllers\PageController;
 Route::get('/', function () { return view('welcome'); })->name('/');
 Route::get('/auth', [PageController::class, 'getAuth'])->name('auth');
 Route::get('/sign', [PageController::class, 'getSign']);
+Route::get('/token', [PageController::class, 'getToken'])->name('token');
 
 Route::post('/authUser', [UserController::class, 'Auth']);
 Route::post('/signUser', [UserController::class, 'Sign']);
 Route::post('/logout', [UserController::class, 'logout']);
+Route::post('/setToken', [UserController::class, 'setToken']);
