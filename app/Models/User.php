@@ -33,7 +33,7 @@ class User extends Authenticatable
         $token = random_bytes(15);
         $token = bin2hex($token);
         DB::table('users')->where('id', Auth::user()->id)->update(['token'=>$token]);
-        return redirect('/');
+        print_r($token);
     }
 
     public function saveClientDatabase($site, $db_host, $db_port, $db_name, $db_username, $db_password)

@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f508f85-2598-4139-8090-a7de24586b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/ClientDatabase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/token.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public_html/assets/js/ajax.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/token.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/token.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +169,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Soft\OpenServer\OpenServer\domains\mzstatistics.com\public_html\assets\js" />
+      <recent name="D:\Soft\OpenServer\OpenServer\domains\mzstatistics.com\public_html\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -221,7 +219,10 @@
       <workItem from="1620853420679" duration="1045000" />
       <workItem from="1620922337866" duration="1753000" />
       <workItem from="1620924140278" duration="914000" />
-      <workItem from="1620929383580" duration="500000" />
+      <workItem from="1620929383580" duration="1173000" />
+      <workItem from="1620931603653" duration="1990000" />
+      <workItem from="1620981995946" duration="1756000" />
+      <workItem from="1621018785460" duration="1750000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлены миграции. Убраны лишние файлы.">
       <created>1620521273119</created>
@@ -237,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620583864775</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Изменения в модели и контроллере">
+      <created>1620929950782</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620929950783</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,13 +266,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавлены миграции. Убраны лишние файлы." />
     <MESSAGE value="Изменены миграции." />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменены миграции." />
+    <MESSAGE value="Изменения в модели и контроллере" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменения в модели и контроллере" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621019004219">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621019004219" />
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620922907003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1620922907003" />
+    <state x="578" y="88" key="CommitChangelistDialog2" timestamp="1620929947999">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="578" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1620929947999" />
     <state x="754" y="402" key="FileChooserDialogImpl" timestamp="1620850271057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,5 +290,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1620650307781" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1620929955030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1620929955030" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1621020521057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1621020521057" />
   </component>
 </project>
