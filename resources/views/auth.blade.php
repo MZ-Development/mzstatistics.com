@@ -4,12 +4,14 @@
 {{--<img class="body_image" src="{{URL::asset("assets/img/1122.jpg")}}">--}}
 <div class="container right-panel-active">
     <div class="container__form container__signup">
-        <form action="#" class="form" id="form1">
+        <form method="POST" action="/signUser" class="form" id="form1">
             <h2 class="form__title">Регистрация</h2>
-            <input type="text" placeholder="Логин" class="input" />
-            <input type="email" placeholder="Почта" class="input" />
-            <input type="password" placeholder="Пароль" class="input" />
-            <button class="btn">Регистрация</button>
+            <input type="text" placeholder="Имя" name="name" id="name_s" class="input" />
+            <input type="text" placeholder="Логин" name="login" id="login_s" class="input" />
+            <input type="email" placeholder="Почта" name="email" id="email_s" class="input" />
+            <input type="tel" placeholder="Телефон" name="phone"  id="phone_s" class="input" />
+            <input type="password" placeholder="Пароль" name="password" id="password_s" class="input" />
+            <button class="btn" id="sign">Регистрация</button>
         </form>
     </div>
 
@@ -19,7 +21,7 @@
             <input type="text" placeholder="Логин" name="login" class="input" />
             <input type="password" placeholder="Пароль" name="password" class="input" />
             <a href="#" class="link">Забыли пароль?</a>
-            <button class="btn">Войти</button>
+            <button class="btn" id="auth">Войти</button>
         </form>
     </div>
 

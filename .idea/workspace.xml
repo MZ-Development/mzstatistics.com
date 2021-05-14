@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="145e0ba0-bf18-4eb9-b685-3b89dcccde76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/css/auth.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/assets/css/auth.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/assets/js/zepto.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/templates/auth_template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/templates/auth_template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +142,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rvo-specohrana" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -170,7 +174,8 @@
       <option name="presentableId" value="Default" />
       <updated>1620685453939</updated>
       <workItem from="1620685456125" duration="5969000" />
-      <workItem from="1620735816769" duration="6789000" />
+      <workItem from="1620735816769" duration="9606000" />
+      <workItem from="1620811694392" duration="983000" />
     </task>
     <servers />
   </component>
@@ -188,16 +193,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/welcome.blade.php</url>
-          <line>53</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
