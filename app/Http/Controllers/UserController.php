@@ -19,18 +19,12 @@ class UserController extends Controller
     public function Sign(Request $request)
     {
         $validate = $request->validate([
-            'name'=>'required|min:2',
             'email' => 'required|email',
-            'phone' => 'required|min:11',
-            'login' => 'required|min:6|max:30',
             'password' => 'required|min:6|max:30'
         ]);
         $user = new User();
         $user->saveUser(
-            $request->input('name'),
             $request->input('email'),
-            $request->input('phone'),
-            $request->input('login'),
             $request->input('password')
         );
         if($user) {
@@ -43,10 +37,10 @@ class UserController extends Controller
             return redirect()->route('/');
         }
         $validate = $request->validate([
-            'login' => 'required|min:6|max:30',
+            'email' => 'required|min:6|max:30|email',
             'password' => 'required|min:6|max:30'
         ]);
-        $user = $request->only('login', 'password');
+        $user = $request->only('email', 'password');
         if(Auth::attempt($user)){
             $request->session()->regenerate();
             return redirect()->route('/');

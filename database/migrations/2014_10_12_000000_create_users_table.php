@@ -15,13 +15,12 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->default('noname');
             $table->string('email')->unique();
-            $table->string('phone')->unique();
+            $table->string('phone')->unique()->default('null');
             $table->string('token')->default('null');
             $table->string('site')->default('null');
             $table->boolean('is_subscribed')->default(false);
-            $table->string('login')->unique();
             $table->string('password');
             $table->dateTime('updated_at');
             $table->dateTime('created_at');
@@ -30,7 +29,6 @@ class CreateUsersTable extends Migration
             $table->string('db_name')->default('null');
             $table->string('db_username')->default('null');
             $table->string('db_password')->default('null');
-
         });
     }
 
