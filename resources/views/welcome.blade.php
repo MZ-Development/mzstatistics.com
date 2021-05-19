@@ -18,10 +18,7 @@ use Illuminate\Support\Facades\Auth;
         if (Auth::check()){
             echo 'Вы авторизированы';
     ?>
-    <form method="POST" action="/logout">
-        @csrf
-        <input type="submit" value="Выйти">
-    </form>
+    <a href="/token">Получить токен</a>
     <?php
         }
         else{
@@ -53,7 +50,6 @@ use Illuminate\Support\Facades\Auth;
                  <image xlink:href="/assets/img/cloud1Mask.jpg" width="1200" height="800"/>
              </g>
          </mask>
-
          <image class="sky" xlink:href="/assets/img/sky.jpg"  width="1200" height="590" />
          <image class="mountBg" xlink:href="/assets/img/mountBg.png" width="1200" height="800"/>
          <image class="mountMg" xlink:href="/assets/img/mountMg.png" width="1200" height="800"/>

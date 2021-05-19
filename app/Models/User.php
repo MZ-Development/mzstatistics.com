@@ -6,6 +6,9 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class User extends Authenticatable
 {
@@ -24,6 +27,33 @@ class User extends Authenticatable
         'login',
         'password'
     ];
+
+    public function setToken()
+    {
+        $token = random_bytes(15);
+        $token = bin2hex($token);
+        DB::table('users')->where('id', Auth::user()->id)->update(['token'=>$token]);
+    }
+
+    public function saveClientDatabase($site, $db_host, $db_port, $db_name, $db_username, $db_password)
+    {
+        DB::table('users')->where('id', Auth::user()->id)->update([
+            'site' => $site,
+            'db_host' => $db_host,
+            'db_port' => $db_port,
+            'db_name' => $db_name,
+            'db_username' => $db_username,
+            'db_password' => Hash::make($db_password),
+        ]);
+    }
+
+    public function saveUser($email, $password)
+    {
+        $user = User::create([
+            'email' => $email,
+            'password' => Hash::make($password)
+        ]);
+    }
 
     /**
      * The attributes that should be hidden for arrays.

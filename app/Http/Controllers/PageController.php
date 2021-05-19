@@ -15,4 +15,12 @@ class PageController extends Controller
     {
         return view('sign');
     }
+
+    public function getToken()
+    {
+        return view('token');
+    public function getIdent()
+    {
+        return view('user_ident');
+    }
 }
