@@ -18,6 +18,8 @@ Route::get('/', function () { return view('welcome'); })->name('/');
 Route::get('/auth', [PageController::class, 'getAuth'])->name('auth');
 Route::get('/sign', [PageController::class, 'getSign']);
 Route::get('/token', [PageController::class, 'getToken'])->name('token');
+Route::get('/identification' , [PageController::class, 'getIdent']);
+
 
 Route::post('/authUser', [UserController::class, 'Auth']);
 Route::post('/signUser', [UserController::class, 'Sign']);
