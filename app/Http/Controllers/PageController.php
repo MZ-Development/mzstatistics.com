@@ -15,9 +15,15 @@ class PageController extends Controller
     {
         return view('sign');
     }
+<<<<<<< Updated upstream
 
     public function getToken()
     {
         return view('token');
+=======
+    public function getIdent()
+    {
+        return view('user_ident');
+>>>>>>> Stashed changes
     }
 }

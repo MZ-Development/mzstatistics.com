@@ -49,7 +49,6 @@ use Illuminate\Support\Facades\Auth;
                  <image xlink:href="/assets/img/cloud1Mask.jpg" width="1200" height="800"/>
              </g>
          </mask>
-
          <image class="sky" xlink:href="/assets/img/sky.jpg"  width="1200" height="590" />
          <image class="mountBg" xlink:href="/assets/img/mountBg.png" width="1200" height="800"/>
          <image class="mountMg" xlink:href="/assets/img/mountMg.png" width="1200" height="800"/>
@@ -71,6 +70,5 @@ use Illuminate\Support\Facades\Auth;
  <script src="{{URL::asset("assets/js/gsap.min.js")}}"></script>
  <script src="{{URL::asset("assets/js/ScrollTrigger.min.js")}}"></script>
  <script src="{{URL::asset("assets/js/ScrollToPlugin3.min.js")}}"></script>
- <script src="{{URL::asset("assets/js/zepto.min.js")}}"></script>
  <script src="{{URL::asset("assets/js/script.js")}}"></script>
     </body>
