@@ -19,6 +19,7 @@ class PageController extends Controller
     public function getToken()
     {
         return view('token');
+    }
     public function getIdent()
     {
         return view('user_ident');
