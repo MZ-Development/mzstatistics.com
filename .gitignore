@@ -8,9 +8,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-<<<<<<< Updated upstream
 /.idea
-=======
 .idea
 .idea/workspace.xml
->>>>>>> Stashed changes
