@@ -210,3 +210,6 @@ body{
 		z-index: 5;
 	}
 }
+.form > .btn {
+    margin-top: 0.4rem !important;
+}
