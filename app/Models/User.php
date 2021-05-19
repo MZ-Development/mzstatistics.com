@@ -47,7 +47,7 @@ class User extends Authenticatable
         ]);
     }
 
-    public function saveUser($email, $password)
+    public function save($email, $password)
     {
         $user = User::create([
             'email' => $email,
@@ -64,5 +64,4 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
-
 }
